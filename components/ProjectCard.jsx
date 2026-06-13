@@ -5,7 +5,7 @@ import React from 'react'
 const ProjectCard = ({projects}) => {
 
   return (
-    <div className="grid grid-cols-2 gap-10 ">
+    <div className="grid grid-cols-1  sm:grid-cols-2 gap-10 ">
         {
             projects && projects.map((project, idx) => {
                 const url = project.imageUrl;
@@ -13,7 +13,7 @@ const ProjectCard = ({projects}) => {
                 return (
                     <div key={idx} className='flex flex-col gap-4 bg-slate-100 rounded-2xl  overflow-hidden '>
 
-                <div className="flex flex-col gap-4 overflow-hidden" >
+                <div className="flex flex-col gap-4 overflow-hidden " >
                     <Link href={url} target='_blank'>
 
                     <Image
