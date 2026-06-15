@@ -66,10 +66,10 @@ const Projects = () => {
         </section>
 
         {/* Newsletter / CTA Section */}
-        <section className="flex gap-8 sm:flex-row flex-col items-center justify-between sm:p-20 p-5  pt-10 pb-20 my-20 ">
-          <div className="max-w-md lex flex-col gap-8">
-            <h2 className="font-bold text-4xl text-slate-900 dark:text-slate-100">Stay in the loop.</h2>
-            <p className="text-gray-900 text-lg font-light mt-6 dark:text-slate-200">
+        <section className="flex gap-8 sm:flex-row flex-col items-center justify-between  pt-10 pb-20 my-20 ">
+          <div className="flex flex-col gap-8">
+            <h2 className="font-bold text-4xl text-slate-900 dark:text-slate-100 text-center sm:text-6xl sm:text-left">Stay in the loop.</h2>
+            <p className="text-gray-900 text-lg font-light mt-6 dark:text-slate-200 text-center sm:text-left">
               Occasional updates on design, utility, and the projects I'm working on. No noise, just signal.
             </p>
           </div>

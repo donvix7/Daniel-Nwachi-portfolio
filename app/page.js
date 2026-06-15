@@ -25,15 +25,15 @@ const Homepage = () => {
       <main className='p-8'>
         {/* Hero Section */}
         <section className="max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-4">
-          <div className="flex-1 gap-4 px-5 sm:p-10">
+          <div className="flex-1 gap-4 px-5 text-center sm:text-left sm:p-10 mt-20">
             <span className="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em]">Product Designer</span>
-            <h1 className="font-bold my-10 text-6xl sm:text-7xl  text-center md:text-left">
+            <h1 className="font-bold my-10 text-7xl sm:text-7xl  text-center md:text-left">
               Creating utility through invisible design.
             </h1>
             <p className="font-light text-lg max-w-4xl">
               I build thoughtful digital experiences that prioritize clarity and function over decoration. Currently shaping the future of tools for creative professionals.
             </p>
-            <div className="flex justify-center md:justify-end mt-4">
+            <div className="flex justify-center md:justify-end my-10">
               <Link href={'/projects'} className="bg-slate-800 px-10 py-2 text-white font-mono hover:bg-slate-700 transition-all flex items-center gap-2 ">
                 View Projects
                 <ChevronRight/>
@@ -97,8 +97,8 @@ const Homepage = () => {
         <section className="my-32  ">
           <div className="flex flex-col gap-6 mb-8 md:flex-row justify-between items-end">
             <div className="max-w-md flex flex-col gap-4">
-              <h2 className="font-bold text-3xl text-slate-800">Selected Work</h2>
-              <p className="font-body-md text-body-md text-slate-600">A curated collection of projects exploring systematic design and interaction.</p>
+              <h2 className="font-bold text-6xl">Selected Work</h2>
+              <p className="text-2xl text-left  ">A curated collection of projects exploring systematic design and interaction.</p>
             </div>
             <div className="hidden md:block">
               <span className="font-label-sm text-label-sm text-slate-950">01 / 0{projects.length}</span>

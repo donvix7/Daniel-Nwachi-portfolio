@@ -14,12 +14,12 @@ const About = () => {
 
       <main className="p-10 flex flex-col gap-10">
         {/* Hero Section / Identity */}
-        <section className="mt-stack-lg md:mt-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter items-end reveal-on-scroll">
-          <div className="md:col-span-7 flex flex-col gap-4 fade-in my-20">
+        <section className="grid grid-cols-1 sm:grid-cols-2 gap-10 fade-in mt-20 mb-20">
+          <div className="col-span-1 sm:col-span-1 flex flex-col align-center justify-center gap-10">
             <span className="font-light uppercase tracking-widest ">Design / Technology / Invisible Utility</span>
-            <h1 className="font-dbo md:text-md text-6xl text-slate-900 dark:text-slate-50">Crafting quiet solutions for complex problems.</h1>
+            <h1 className="font-bold md:text-md text-7xl text-slate-900 dark:text-slate-50">Crafting quiet solutions for complex problems.</h1>
           </div>
-          <div className="md:col-span-5 md:pl-stack-lg">
+          <div className="col-span-1 sm:col-span-1">
             <div className="aspect-square bg-slate-100 overflow-hidden transition-all duration-700 fade-in">
               <Image
                 alt="Profile Photo"
@@ -33,11 +33,11 @@ const About = () => {
         </section>
 
         {/* Biography Section */}
-        <section className="grid grid-cols-1 sd:grid-cols-2 gap-10 fade-in mt-20 mb-20">
-          <div className="flex-1">
+        <section className="grid grid-cols-1 sm:grid-cols-2 gap-10 fade-in mt-20 mb-20">
+          <div className="col-span-1 sm:col-span-1">
             <h2 className="font-bold text-3xl dark:text-slate-200 text-slate-900 sticky top-24">The Approach</h2>
           </div>
-          <div className="flex flex-col gap-10 flex-1 text-gray-800 font-light">
+          <div className="flex flex-col gap-10 col-span-1 sm:col-span-1 text-gray-800 font-light">
             <p className="dark:text-slate-400">
               I believe that the best design is one that feels inevitable. My practice is rooted in <span className="font-semibold">Invisible Utility</span>—the idea that technology should serve human needs without drawing unnecessary attention to itself.
             </p>
@@ -47,17 +47,15 @@ const About = () => {
             <p className="dark:text-slate-400">
               Currently based in the Pacific Northwest, I collaborate with forward-thinking companies to translate abstract concepts into tangible, high-performance digital products. Whether it's a complex enterprise dashboard or a refined consumer experience, my goal is to strip away the noise until only the essence remains.
             </p>
-            <div className="pt-stack-md flex flex-wrap gap-stack-sm">
-              <div className="flex items-center gap-2 px-8 py-2 uppercase bg-slate-200 dark:bg-slate-500 text-slate-900 dark:text-slate-100">
-                <span className="font-mono font-semibold">Available for select projects</span>
-              </div>
+            <div className=" flex flex-wrap gap-4 text-center sm:text-left">
+              <Link href={'/projects'} className="flex items-center gap-2 px-8 py-2 uppercase bg-slate-200 dark:bg-slate-500 text-slate-900 dark:text-slate-100 font-mono font-semibold">Available for select projects</Link>
             </div>
           </div>
         </section>
 
         {/* Services & Skills Grid (Bento Style) */}
         <section className="mt-20 reveal-on-scroll">
-          <h2 className="font-bold text-3xl text-slate-900 dark:text-slate-200 backdrop-blur-sm sticky top-24 mb-10">Capabilities</h2>
+          <h2 className="font-bold text-3xl text-slate-900 dark:text-slate-200 backdrop-blur-sm sticky top-24 mb-10 w-fit">Capabilities</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
             {/* Bento Card 1 */}
             <div className="md:col-span-2 bg-white p-10 border border-slate-800 flex flex-col justify-between hover:bg-white transition-colors group sm:p-20 p-5 py-20 ">
@@ -96,7 +94,7 @@ const About = () => {
                 <h3 className="font-bold text-2xl dark:text-slate-900">Strategy &amp; Consulting</h3>
                 <p className="dark:text-slate-900">Helping leadership teams define product roadmaps, audit existing systems, and implement design-led growth strategies.</p>
               </div>
-              <div className="  w-full flex gap-4 justify-center items-center">
+              <div className="  w-full flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="w-20 h-20  bg-white border-slate-800 dark:text-slate-900 flex items-center justify-center p-4">
                   <TrendingUp/>
                 </div>
