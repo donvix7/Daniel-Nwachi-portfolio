@@ -14,9 +14,6 @@ const Nav = () => {
             <Link href="/projects" className="font-body-md text-slate-500 hover:text-slate-900 transition-colors cursor-pointer">Projects</Link>
             <Link href="/about" className="font-body-md text-slate-500 hover:text-slate-900 transition-colors cursor-pointer">About</Link>
           </div>
-          <Link href="/contact" className="bg-primary text-on-primary px-5 py-2 rounded-DEFAULT font-label-sm text-label-sm hover:opacity-90 transition-opacity">
-            <Contact />
-          </Link>
         </nav>
       </header>
     </div>

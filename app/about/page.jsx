@@ -25,10 +25,10 @@ const About = () => {
             <div className="aspect-square bg-slate-100 overflow-hidden transition-all duration-700 fade-in">
               <Image
                 alt="Profile Photo"
-                className="w-[750px] h-[900px] object-cover "
+                className="w-full h-full object-cover "
                 src={screenshotUrl}
-                width={750}
-                height={900}
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -78,7 +78,7 @@ const About = () => {
                 <h3 className="font-bold text-2xl text-white">Interaction Design</h3>
                 <p className="text-slate-300">Micro-interactions, motion studies, and behavioral design that bring interfaces to life with precision.</p>
               </div>
-              <div className="mt-stack-lg">
+              <div className="mt-stack-lg flex justify-center align-center text-center">
                 <MessageSquare/>
               </div>
             </div>
