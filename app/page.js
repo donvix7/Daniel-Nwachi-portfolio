@@ -45,7 +45,7 @@ const Homepage = () => {
               <Image
                 alt="Daniel's Workspace"
                 className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                src="/images/image1.jpeg"
+                src="/landing image.jpg"
                 width={1000}
                 height={1000}
                 unoptimized
