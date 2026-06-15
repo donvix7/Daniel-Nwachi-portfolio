@@ -48,6 +48,7 @@ const Homepage = () => {
                 src="/landing image.jpg"
                 width={1000}
                 height={1000}
+                loading='eager'
                 unoptimized
               />
             </div>
