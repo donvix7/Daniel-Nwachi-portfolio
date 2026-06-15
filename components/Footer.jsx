@@ -10,8 +10,8 @@ const Footer = () => {
           <p className="font-body-lg text-body-lg text-slate-500">© 2026 Daniel Nwachi. Built with Utility</p>
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-6">
             <Link href="https://www.linkedin.com/in/danielnwachi/" className="text-secondary hover:text-primary transition-colors font-body-lg text-body-lg" >LinkedIn</Link>
-            <Link href="https://github.com/donvix7" className="text-secondary hover:text-primary transition-colors font-body-lg text-body-lg">GitHub</Link>
-            <Link href="#" className="text-secondary hover:text-primary transition-colors font-body-lg text-body-lg"><Mail/></Link>
+            <Link href="https://github.com/donvix7" className="text-secondary hover:text-primary transition-colors font-body-lg text-body-lg">Github</Link>
+            <Link href="#" className="text-secondary hover:text-primary transition-colors font-body-lg text-body-lg">Mail</Link>
           </div>
         </div>
       </footer>

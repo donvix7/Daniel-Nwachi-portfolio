@@ -33,15 +33,15 @@ const Projects = () => {
 
       <main className="p-10 flex flex-col gap-10">
         {/* Hero Title Section */}
-        <section className="max-w-2xl flex flex-col gap-10 mt-20">
-          <h1 className="text-6xl font-bold text-slate-900 dark:text-slate-100">Selected Works</h1>
-          <p className="text-xl text-neutral-900 dark:text-slate-200 mb-10">
-            A collection of digital experiences, architectural systems, and utility-driven interfaces designed with precision and quiet confidence.
+        <section className="max-w-2xl flex flex-col  my-20">
+          <h1 className="text-center sm:text-left text-7xl sm:text-8xl font-bold text-slate-900 dark:text-slate-100">Selected Works</h1>
+          <p className="text-center sm:text-left text-2xl  dark:text-slate-200 ">
+            A collection of digital solutions designed with precision and quiet confidence.
           </p>
         </section>
 
         {/* Project Filter Chips */}
-        <div className="flex flex-wrap gap-4 mb-10">
+        <div className="flex flex-wrap gap-4 ">
           {filters.map((filter) => (
             <span
               key={filter}
@@ -66,7 +66,7 @@ const Projects = () => {
         </section>
 
         {/* Newsletter / CTA Section */}
-        <section className="flex gap-8 sm:flex-row flex-col items-center justify-between sm:p-20 p-5 border-t border-slate-300 dark:border-slate-500 pt-10 pb-20 my-20 ">
+        <section className="flex gap-8 sm:flex-row flex-col items-center justify-between sm:p-20 p-5  pt-10 pb-20 my-20 ">
           <div className="max-w-md lex flex-col gap-8">
             <h2 className="font-bold text-4xl text-slate-900 dark:text-slate-100">Stay in the loop.</h2>
             <p className="text-gray-900 text-lg font-light mt-6 dark:text-slate-200">

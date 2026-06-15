@@ -29,10 +29,10 @@ const ProjectCard = ({projects}) => {
                     />
                     </Link>
                 </div>
-                <div className="flex flex-col gap-4">
-                    <span className="font-label-sm text-label-sm uppercase tracking-[0.2em]">{project.category || 'SYSTEM'} / {project.year || '2023'}</span>
-                    <h3 className="font-headline-md text-headline-md font-mono tracking-wider">{project.title || 'Core Library'}</h3>
-                    <p className='font-body-md text-body-md '>{project.description || 'A comprehensive design system focused on extreme legibility and functional minimalism for high-complexity data dashboards.'}</p>
+                <div className="flex flex-col gap-4 p-4">
+                    <span className=" text-black/70 uppercase tracking-[0.2em]">{project.category || 'SYSTEM'} / {project.year || '2023'}</span>
+                    <h3 className=" text-black/70 font-mono tracking-wider">{project.title || 'Core Library'}</h3>
+                    <p className=' text-black/70 '>{project.description || 'A comprehensive design system focused on extreme legibility and functional minimalism for high-complexity data dashboards.'}</p>
                    <Link href={url} target='_blank'  className="bg-slate-900 text-slate-100 w-fit px-10 py-2 mt-5 m-2 view-link inline-flex items-center justify-end font-mono transition-all duration-300">
                   View Project
                 </Link>

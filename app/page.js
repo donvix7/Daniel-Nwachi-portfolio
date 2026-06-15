@@ -25,15 +25,15 @@ const Homepage = () => {
       <main className='p-8'>
         {/* Hero Section */}
         <section className="max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-4">
-          <div className="flex-1 gap-4 p-10">
+          <div className="flex-1 gap-4 px-5 sm:p-10">
             <span className="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em]">Product Designer</span>
-            <h1 className="font-bold text-4xl md:text-6xl my-12 ">
+            <h1 className="font-bold my-10 text-6xl sm:text-7xl  text-center md:text-left">
               Creating utility through invisible design.
             </h1>
             <p className="font-light text-lg max-w-4xl">
               I build thoughtful digital experiences that prioritize clarity and function over decoration. Currently shaping the future of tools for creative professionals.
             </p>
-            <div className="flex justify-end mt-4">
+            <div className="flex justify-center md:justify-end mt-4">
               <Link href={'/projects'} className="bg-slate-800 px-10 py-2 text-white font-mono hover:bg-slate-700 transition-all flex items-center gap-2 ">
                 View Projects
                 <ChevronRight/>
@@ -43,7 +43,7 @@ const Homepage = () => {
           <div className="flex-1 w-full relative">
             <div className="aspect-square bg-slate-100 overflow-hidden group">
               <Image
-                alt="Alex D. Workspace"
+                alt="Daniel's Workspace"
                 className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 src="/images/image1.jpeg"
                 width={1000}
