@@ -1,13 +1,15 @@
 "use client"
 
 import Footer from '@/components/Footer';
-import { Lightbulb, TrendingUp } from 'lucide-react';
+import { Bubbles, Lightbulb, MessageSquare, TrendingUp } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 
 const About = () => {
- 
+  const url = "https://res.cloudinary.com/ddbbbb0xl/image/upload/v1781536783/my-passport_srtx1a.png"
+
+  const screenshotUrl = `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`;
 
   return (
     <>
@@ -23,8 +25,8 @@ const About = () => {
             <div className="aspect-square bg-slate-100 overflow-hidden transition-all duration-700 fade-in">
               <Image
                 alt="Profile Photo"
-                className="w-full h-full object-cover"
-                src="/profile.jpg"
+                className="w-full h-full object-cover "
+                src={screenshotUrl}
                 width={500}
                 height={500}
               />
@@ -58,25 +60,26 @@ const About = () => {
           <h2 className="font-bold text-3xl text-slate-900 dark:text-slate-200 backdrop-blur-sm sticky top-24 mb-10 w-fit">Capabilities</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
             {/* Bento Card 1 */}
-            <div className="md:col-span-2 bg-white p-10 border border-slate-800 flex flex-col justify-between hover:bg-white transition-colors group sm:p-20 p-5 py-20 ">
+            <div className="md:col-span-2 bg-white border border-slate-300 flex flex-col gap-10 justify-between hover:bg-white transition-colors group sm:p-20 p-5 py-20 ">
               <div className='flex flex-col gap-4'>
                 <h3 className="font-bold text-2xl text-slate-900 ">Systems Architecture</h3>
                 <p className="text-gray-700 max-w-md">Developing scalable design systems and frontend architectures that empower teams to build consistent, high-quality interfaces at scale.</p>
               </div>
-              <div className="flex flex-wrap gap-4 mt-20">
-                <span className="border dark:bg-slate-300 border-slate-300 px-8 py-2 font-mono text-slate-800">Tailwind</span>
-                <span className="border dark:bg-slate-300 border-slate-300 px-8 py-2 font-mono text-slate-800">React</span>
-                <span className="border dark:bg-slate-300 border-slate-300 px-8 py-2 font-mono text-slate-800">Design Tokens</span>
+              <div className="flex flex-wrap gap-4">
+                <span className="border bg-slate-300 dark:bg-slate-300 border-slate-300 px-8 py-2 font-mono text-slate-800">Tailwind</span>
+                <span className="border bg-slate-300 dark:bg-slate-300 border-slate-300 px-8 py-2 font-mono text-slate-800">React</span>
+                <span className="border bg-slate-300 dark:bg-slate-300 border-slate-300 px-8 py-2 font-mono text-slate-800">Design Tokens</span>
               </div>
             </div>
 
             {/* Bento Card 2 */}
-            <div className="bg-slate-900  border border-slate-600 flex flex-col justify-between hover:bg-primary-container transition-colors sm:p-20 p-5 py-20 tracking-wider">
+            <div className="bg-slate-900  border border-slate-300 flex flex-col justify-between hover:bg-primary-container transition-colors sm:p-20 p-5 py-20 tracking-wider">
               <div className='flex flex-col gap-4'>
                 <h3 className="font-bold text-2xl text-white">Interaction Design</h3>
                 <p className="text-slate-300">Micro-interactions, motion studies, and behavioral design that bring interfaces to life with precision.</p>
               </div>
               <div className="mt-stack-lg">
+                <MessageSquare/>
               </div>
             </div>
 
