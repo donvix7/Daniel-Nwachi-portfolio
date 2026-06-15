@@ -25,10 +25,10 @@ const About = () => {
             <div className="aspect-square bg-slate-100 overflow-hidden transition-all duration-700 fade-in">
               <Image
                 alt="Profile Photo"
-                className="w-full h-full object-cover "
+                className="w-[750px] h-[900px] object-cover "
                 src={screenshotUrl}
-                width={500}
-                height={500}
+                width={750}
+                height={900}
               />
             </div>
           </div>

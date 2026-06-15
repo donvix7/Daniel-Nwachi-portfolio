@@ -26,7 +26,7 @@ const Homepage = () => {
         {/* Hero Section */}
         <section className="max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-4">
           <div className="flex-1 gap-4 px-5 text-center sm:text-left sm:p-10 mt-20">
-            <span className="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em]">Product Designer</span>
+            <span className="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em]">Software Engineer</span>
             <h1 className="font-bold my-10 text-7xl sm:text-7xl  text-center md:text-left">
               Creating utility through invisible design.
             </h1>
@@ -74,17 +74,23 @@ const Homepage = () => {
                   <div className='flex flex-col gap-4'>
                     <span className="block border-b border-slate-400  pb-2">Core Skills</span>
                     <ul className="space-y-2">
-                      <li>UI/UX Engineering</li>
-                      <li>Design Systems</li>
-                      <li>Prototypes &amp; Motion</li>
+                      <li>Frontend systems architecture and components design</li>
+                      <li>Responsive UI development and performance optimisation</li>
+                      <li>API integration and frontend-backend coupling</li>
+                      <li>Full-stack application development</li>
+                      <li>System and workflow design</li>
+
                     </ul>
                   </div>
                   <div className='flex flex-col gap-4'>
                     <span className="w-full  border-b border-slate-400 inline-block pb-2">Focus</span>
                     <ul className="space-y-2">
-                      <li>SaaS Tools</li>
-                      <li>Fintech Platforms</li>
-                      <li>Internal Tooling</li>
+                      <li>React/Next.js</li>
+                      <li>Node.js/Express</li>
+                      <li>TypeScript</li>
+                      <li>PostgreSQL/MongoDB</li>
+                      <li>RESTful APIs</li>
+                      <li>System Design & DevOps</li>
                     </ul>
                   </div>
                 </div>
